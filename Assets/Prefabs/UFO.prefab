@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4699806822160166}
   - component: {fileID: 212787684638534788}
   - component: {fileID: 114832847136925416}
+  - component: {fileID: 70727173518140644}
+  - component: {fileID: 114359453752344696}
   m_Layer: 0
   m_Name: UFO
   m_TagString: Untagged
@@ -34,13 +36,39 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1634848200297990}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.186, y: 0.909, z: 0.8105469}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.83, y: -0.8, z: 0.8105469}
   m_LocalScale: {x: 12.210173, y: 4.186308, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &70727173518140644
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1634848200297990}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.16412891, y: 0.14491023}
+  m_Direction: 1
+--- !u!114 &114359453752344696
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1634848200297990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29735044e8f017c44bfb68bdc9fb4f97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114832847136925416
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52,9 +80,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6340336bfec1bdd428ef909dd8e15cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints: []
-  TimeOnStay: 0
-  moveSpeed: 0
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  TimeOnStay: 2
+  moveSpeed: 2
 --- !u!212 &212787684638534788
 SpriteRenderer:
   m_ObjectHideFlags: 1

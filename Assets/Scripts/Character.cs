@@ -34,6 +34,12 @@ public class Character : MonoBehaviour {
 			StartCoroutine(coroutineHeal);
 			Debug.Log("StartedCoroutine ResoreHealth");
 		}
+		else
+			if (collision.CompareTag("Enemy"))
+			{
+			GetDamage(collision.gameObject.GetComponent<EnemyData>().enemy.Damage);
+			}
+		
 	}
 
 	private void OnTriggerExit2D(Collider2D collision)
@@ -59,10 +65,15 @@ public class Character : MonoBehaviour {
 	{
 		while(Health >= 0)
 		{
-			Health -= ColdDamage;
+			GetDamage(ColdDamage);
 			yield return new WaitForSeconds(DamageRate);
 		}
 		yield return null;
+	}
+
+	private void GetDamage(float damageAmount)
+	{
+		Health -= damageAmount;
 	}
 
 	public IEnumerator ResoreHealth()
