@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class FollowTrail : MonoBehaviour {
 
-
 	public float PlayerTravelSpeed = 10f;
 	public Transform WaypointParent;
 	public Transform waypoint;

@@ -1,10 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class MouseFollower : MonoBehaviour {
-
-	
 	public delegate void PositionsAction(Vector3[] vector3s);
 	public static event PositionsAction OnPositionsAdded;
 
@@ -13,8 +12,7 @@ public class MouseFollower : MonoBehaviour {
 
 	Vector2 pos;
 	TrailRenderer tr;
-	//float timeElapsed = 0f;
-	//float timeOfExist;
+	
 	
 	//waypoint things
 	public Vector3[] positions { get; private set; }
@@ -30,17 +28,54 @@ public class MouseFollower : MonoBehaviour {
 
 	void Update()
 	{
+#if UNITY_EDITOR || UNITY_STANDALONE
+		if (!EventSystem.current.IsPointerOverGameObject())
+		{
+		if (Input.GetKeyDown(KeyCode.Mouse0))
+		{
+			tr.Clear();
+			positions = new Vector3[0];
+		}
+		if (Input.GetKey(KeyCode.Mouse0))
+		{
+			if (OnNewTrailStarted != null)
+			{
+				OnNewTrailStarted();
+			}
 
+			tr.emitting = true;
+		}
+
+		if (Input.GetKeyUp(KeyCode.Mouse0))
+		{
+			tr.emitting = false;
+			//===========================================Getting positions===================
+
+			positions = new Vector3[tr.positionCount];
+			NumberOfPositions = tr.GetPositions(positions);
+			
+			if (OnPositionsAdded != null)
+			{
+				OnPositionsAdded(positions);
+			}
+		}
+
+		pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		transform.position = pos;
+		}
+#else
+		if (!EventSystem.current.IsPointerOverGameObject())
+	{
 		if (Input.touchCount > 0)
 		{
 			Touch touch = Input.GetTouch(0);
 
-			if (Input.GetKeyDown(KeyCode.Mouse0) || touch.phase == TouchPhase.Began)
+			if (touch.phase == TouchPhase.Began)
 			{
 				tr.Clear();
 				positions = new Vector3[0];
 			}
-			if (Input.GetKey(KeyCode.Mouse0) || touch.phase == TouchPhase.Moved)
+			if (touch.phase == TouchPhase.Moved)
 			{
 				if (OnNewTrailStarted != null)
 				{
@@ -49,37 +84,29 @@ public class MouseFollower : MonoBehaviour {
 
 				tr.emitting = true;
 			}
-
-			if (Input.GetKeyUp(KeyCode.Mouse0) || touch.phase == TouchPhase.Ended)
+			if (touch.phase == TouchPhase.Ended)
 			{
-
 				tr.emitting = false;
 
 				//===========================================Getting positions===================
 
 				positions = new Vector3[tr.positionCount];
 				NumberOfPositions = tr.GetPositions(positions);
-
-				//for (int i = 0; i < NumberOfPositions; i++)
-				//{
-				//	positions[i] = positions[i];
-				//}
-
-				//====================create waypoints object & fill it with positions============
-				//player will access this data
-				//notify via delegates pass positions
 				if (OnPositionsAdded != null)
 				{
 					OnPositionsAdded(positions);
 				}
-
 			}
-#if UNITY_EDITOR||UNITY_STANDALONE
-			pos = Camera.main.ScreenToWorldPoint(Input.mousePosition );
-#else
+
 			pos = Camera.main.ScreenToWorldPoint(touch.position);
+		transform.position = pos;
+
+		} 
+	}
 #endif
-			transform.position = pos;
-		}
+
+
+
 	}
 }
+

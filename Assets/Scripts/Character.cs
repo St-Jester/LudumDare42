@@ -33,11 +33,7 @@ public class Character : MonoBehaviour {
 			coroutineHeal = ResoreHealth();
 			StartCoroutine(coroutineHeal);
 			Debug.Log("StartedCoroutine ResoreHealth");
-
 		}
-
-		
-
 	}
 
 	private void OnTriggerExit2D(Collider2D collision)
