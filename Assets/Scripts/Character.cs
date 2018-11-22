@@ -37,7 +37,7 @@ public class Character : MonoBehaviour {
 		else
 			if (collision.CompareTag("Enemy"))
 			{
-			GetDamage(collision.gameObject.GetComponent<EnemyData>().enemy.Damage);
+				GetDamage(collision.gameObject.GetComponent<EnemyData>().enemy.Damage);
 			}
 		
 	}
