@@ -435,7 +435,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4445010433196392, guid: eb06623188e6ae9448a5698b48f89dc6, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -14.637112
+      value: -14.637001
       objectReference: {fileID: 0}
     - target: {fileID: 4445010433196392, guid: eb06623188e6ae9448a5698b48f89dc6, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1319,7 +1319,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4194440451986500, guid: b3d92ee3e35b6384987fd153ad8e5778, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -14.637112
+      value: -14.637001
       objectReference: {fileID: 0}
     - target: {fileID: 4194440451986500, guid: b3d92ee3e35b6384987fd153ad8e5778, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1693,6 +1693,11 @@ Prefab:
     - target: {fileID: 4527209813681540, guid: f0809d0be15a7244baa735649ae2a069, type: 2}
       propertyPath: m_RootOrder
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693651111130380, guid: f0809d0be15a7244baa735649ae2a069,
+        type: 2}
+      propertyPath: nextScene
+      value: Win
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0809d0be15a7244baa735649ae2a069, type: 2}

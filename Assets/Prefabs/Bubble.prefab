@@ -88,8 +88,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetScale: 0.4
-  shrinkSpeed: 0.01
+  shrinkSpeed: 20
   useRandom: 1
+  minRandom: 0.5
+  maxRandom: 3
 --- !u!212 &212008712942626052
 SpriteRenderer:
   m_ObjectHideFlags: 1

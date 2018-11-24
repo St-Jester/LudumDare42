@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class RocketController : MonoBehaviour {
 
 	Animator _anim;
-	
+	public string nextScene;
 	private void Start()
 	{
 		_anim = GetComponent<Animator>();
@@ -25,7 +25,7 @@ public class RocketController : MonoBehaviour {
 
 			Cursor.visible = true;
 
-			SceneManager.LoadScene("Win");
+			SceneManager.LoadScene(nextScene);
 
 		}
 
