@@ -819,12 +819,12 @@ Prefab:
     - target: {fileID: 114881731227654438, guid: 6c390432bbc0d6b4583e706aac6af9f1,
         type: 2}
       propertyPath: DamageRate
-      value: 0
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 114881731227654438, guid: 6c390432bbc0d6b4583e706aac6af9f1,
         type: 2}
       propertyPath: ColdDamage
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c390432bbc0d6b4583e706aac6af9f1, type: 2}

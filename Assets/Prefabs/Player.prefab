@@ -118,7 +118,7 @@ MonoBehaviour:
   MaxHealth: 100
   Health: 100
   DamageRate: 0.25
-  ColdDamage: 4
+  ColdDamage: 3
   HealthRestore: 1
   RegenRate: 0.1
 --- !u!212 &212582633550193814
