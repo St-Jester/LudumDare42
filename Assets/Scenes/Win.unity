@@ -163,12 +163,12 @@ Prefab:
     - target: {fileID: 224873103711926906, guid: 4930abe2b801be74a906ca48ef2f7d1e,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 690
+      value: 816
       objectReference: {fileID: 0}
     - target: {fileID: 224873103711926906, guid: 4930abe2b801be74a906ca48ef2f7d1e,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -397.5
+      value: -334
       objectReference: {fileID: 0}
     - target: {fileID: 224873103711926906, guid: 4930abe2b801be74a906ca48ef2f7d1e,
         type: 2}
@@ -581,12 +581,12 @@ Prefab:
     - target: {fileID: 224873103711926906, guid: 4930abe2b801be74a906ca48ef2f7d1e,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -713
+      value: -527
       objectReference: {fileID: 0}
     - target: {fileID: 224873103711926906, guid: 4930abe2b801be74a906ca48ef2f7d1e,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -387
+      value: -472
       objectReference: {fileID: 0}
     - target: {fileID: 224873103711926906, guid: 4930abe2b801be74a906ca48ef2f7d1e,
         type: 2}
@@ -1083,6 +1083,21 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: GoToNextSceneByName
       objectReference: {fileID: 0}
+    - target: {fileID: 114429661002356366, guid: df2a2bd2ac18e254fb62ebcf8c1cb94d,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114429661002356366, guid: df2a2bd2ac18e254fb62ebcf8c1cb94d,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114429661002356366, guid: df2a2bd2ac18e254fb62ebcf8c1cb94d,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df2a2bd2ac18e254fb62ebcf8c1cb94d, type: 2}
   m_IsPrefabAsset: 0
@@ -1146,7 +1161,7 @@ Prefab:
     - target: {fileID: 224588768079547328, guid: 551c97c0efdc6304dbd57b87268f8a89,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -922.35
+      value: -1008
       objectReference: {fileID: 0}
     - target: {fileID: 224588768079547328, guid: 551c97c0efdc6304dbd57b87268f8a89,
         type: 2}

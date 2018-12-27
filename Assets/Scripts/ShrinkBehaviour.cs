@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 public class ShrinkBehaviour : MonoBehaviour {
 
 	public float targetScale = 0.1f;
-	public float shrinkSpeed = 2f;
+	public float shrinkSpeed = 0.1f;
 	public bool useRandom = false;
 
 	public float minRandom;
@@ -31,11 +31,7 @@ public class ShrinkBehaviour : MonoBehaviour {
 		}
 	}
 	
-	void Update ()
-	{
-		
-	}
-
+	
 	void FixedUpdate()
 	{
 		if (PlayerEntered)
