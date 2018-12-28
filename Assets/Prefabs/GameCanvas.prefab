@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 222456351564443904}
   - component: {fileID: 114981637910294802}
   - component: {fileID: 114721847474045122}
+  - component: {fileID: 114578723054837600}
   m_Layer: 5
   m_Name: LevelNum
   m_TagString: Untagged
@@ -301,7 +302,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 200
+  m_MaxValue: 150
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -648,6 +649,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd3c0e026396200449425d08690b1deb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114578723054837600
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1189127965892226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 772cb3f8f95c39645959a9b7d4d6a394, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeTime: 1
 --- !u!114 &114690795535788464
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -908,7 +921,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Level 1
+  m_text: Level 3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d996760fc4de2574ab57c0fdfbf57a23, type: 2}
   m_sharedMaterial: {fileID: 21168771967565500, guid: d996760fc4de2574ab57c0fdfbf57a23,

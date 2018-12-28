@@ -115,12 +115,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainSlider: {fileID: 0}
-  MaxHealth: 200
-  Health: 200
-  DamageRate: 0.15
-  ColdDamage: 3
-  HealthRestore: 1
-  RegenRate: 0.2
+  MaxHealth: 150
+  Health: 150
+  DamageRate: 0.3
+  ColdDamage: 2.5
+  HealthRestore: 2
+  RegenRate: 0.6
 --- !u!212 &212582633550193814
 SpriteRenderer:
   m_ObjectHideFlags: 1

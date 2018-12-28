@@ -256,7 +256,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4445010433196392, guid: eb06623188e6ae9448a5698b48f89dc6, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -14.637107
+      value: -14.636959
       objectReference: {fileID: 0}
     - target: {fileID: 4445010433196392, guid: eb06623188e6ae9448a5698b48f89dc6, type: 2}
       propertyPath: m_LocalPosition.y
@@ -806,11 +806,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 114881731227654438, guid: 6c390432bbc0d6b4583e706aac6af9f1,
-        type: 2}
-      propertyPath: mainSlider
-      value: 
-      objectReference: {fileID: 1595683223}
     - target: {fileID: 114744720018627866, guid: 6c390432bbc0d6b4583e706aac6af9f1,
         type: 2}
       propertyPath: WaypointParent
@@ -818,13 +813,13 @@ Prefab:
       objectReference: {fileID: 896806086}
     - target: {fileID: 114881731227654438, guid: 6c390432bbc0d6b4583e706aac6af9f1,
         type: 2}
-      propertyPath: DamageRate
-      value: 0.25
-      objectReference: {fileID: 0}
+      propertyPath: mainSlider
+      value: 
+      objectReference: {fileID: 1595683223}
     - target: {fileID: 114881731227654438, guid: 6c390432bbc0d6b4583e706aac6af9f1,
         type: 2}
-      propertyPath: ColdDamage
-      value: 4
+      propertyPath: DamageRate
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c390432bbc0d6b4583e706aac6af9f1, type: 2}
@@ -1103,7 +1098,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4194440451986500, guid: b3d92ee3e35b6384987fd153ad8e5778, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -14.637107
+      value: -14.636959
       objectReference: {fileID: 0}
     - target: {fileID: 4194440451986500, guid: b3d92ee3e35b6384987fd153ad8e5778, type: 2}
       propertyPath: m_LocalPosition.y
